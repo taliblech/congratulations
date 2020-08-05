@@ -19,7 +19,7 @@ class ImagePart {
   
   draw() {
     imageMode(CENTER);
-    image(this.img, this.x, this.y, this.img.width/5, this.img.height/5);
+    image(this.img, this.x, this.y, this.img.width, this.img.height);
   }
   
   press() {
@@ -27,10 +27,10 @@ class ImagePart {
   }
   
   isInside(mx, my) {
-    return this.x - this.img.width/10  <= mx &&
-      mx <= this.x + this.img.width/10 &&
-      this.y - this.img.height/10  <= my &&
-      my <= this.y + this.img.height/10;
+    return this.x - this.img.width/2  <= mx &&
+      mx <= this.x + this.img.width/2 &&
+      this.y - this.img.height/2  <= my &&
+      my <= this.y + this.img.height/2;
   }
 }
 
