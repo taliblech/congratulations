@@ -61,7 +61,7 @@ function drawChair() {
 
 function preload() {
   soundFormats('mp3');
-  song = loadSound('assets/arabic_nokia_tone.mp3');
+  song = loadSound('assets/each.mp3');
   songCelebration = loadSound('assets/Royalty_Free_Music.mp3');
   
   loadFont('assets/EzraSil-Po0B.ttf');
